@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10款Steam增量游戏调研报告 v2 · 含精确销量/移动端热度/小程序竞品</title>
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#ffffff; --ink:#1f2330; --muted:#6b7280;
+    --accent:#e8543f; --gold:#d97706; --blue:#2563eb; --green:#059669; --line:#e5e7eb;
+    --red:#dc2626;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;padding:32px 16px}
+  .wrap{max-width:1100px;margin:0 auto}
+  h1{font-size:26px;margin-bottom:6px}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:28px}
+  h2{font-size:20px;margin:34px 0 14px;padding-left:10px;border-left:4px solid var(--accent)}
+  h3{font-size:15px;margin:18px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:18px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{background:#f3f4f6;text-align:left;padding:8px 9px;font-weight:600;white-space:nowrap}
+  td{padding:8px 9px;border-top:1px solid var(--line);vertical-align:top}
+  .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .rank{display:inline-block;width:24px;height:24px;line-height:24px;border-radius:50%;background:#e5e7eb;text-align:center;font-weight:700;font-size:12px}
+  .r1{background:#fbbf24;color:#fff}.r2{background:#9ca3af;color:#fff}.r3{background:#b45309;color:#fff}
+  .tag{display:inline-block;padding:1px 8px;border-radius:99px;font-size:12px;white-space:nowrap}
+  .t-hot{background:#fee2e2;color:var(--red)}
+  .t-warm{background:#fef3c7;color:#b45309}
+  .t-cool{background:#dbeafe;color:var(--blue)}
+  .bar{background:#eef1f6;border-radius:6px;height:11px;overflow:hidden;min-width:120px}
+  .bar>i{display:block;height:100%;background:linear-gradient(90deg,#f97316,#ef4444)}
+  .note{font-size:13px;color:var(--muted);margin-top:10px}
+  .hl{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 16px;font-size:14px;margin:14px 0}
+  .hl-blue{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:12px 16px;font-size:14px;margin:14px 0}
+  .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:10px 0 4px}
+  .kpi .c{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .kpi b{font-size:19px}
+  .up{color:var(--green);font-weight:600}
+  .down{color:var(--red);font-weight:600}
+  footer{color:var(--muted);font-size:12px;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>10款 Steam 增量游戏调研报告 <span style="font-size:15px;color:var(--accent)">v2 · 立项决策补充版</span></h1>
+<div class="sub">来源视频：B站「昭柴猫的猫老师」《10款steam上好玩的增量点击独立游戏推荐-Incremental Indie Games 001》（BV1M73t6REC8）<br>
+调研时间：2026-10-20 / 2026-10-21 ｜ v2 新增：①第三方精确销量（Gamalytic/SteamDB）②短视频与移动端热度 ③微信小程序竞品格局</div>
+
+<div class="hl">
+<b>视频中的10款游戏：</b>咖啡星矿工 Astro Prospector ／ 厨师骑士 Chef Knight ／ 一挖到底 Rock Bottom ／ 点击炼金术 Forage Wizard ／ 饼干计数器 Cookie Clicker ／ 持续挖掘世界 Keep on Mining! - Worlds ／ 钓鱼公司 Fishing Inc ／ 坚守阵地 Outhold ／ 龟龟潜海记 Shelldiver ／ 爆裂列车 Trainatic。
+</div>
+
+<h2>一、Steam 精确销量排名（Gamalytic + SteamDB 交叉验证）</h2>
+<div class="card">
+<p style="font-size:13px;color:var(--muted);margin-bottom:10px">v2 已用 Gamalytic 精确估算替换原「评测数×系数」粗估。销量区间为置信区间，营收为买断收入（不含 DLC/手游）。</p>
+<table>
+<tr><th>排名</th><th>游戏</th><th class="num">销量（Gamalytic）</th><th class="num">营收</th><th class="num">好评率</th><th>中国玩家占比</th><th>近期信号</th></tr>
+<tr><td><span class="rank r1">1</span></td><td><b>Cookie Clicker 饼干计数器</b></td><td class="num">320万</td><td class="num">$950万</td><td class="num">96%</td><td>7.0%（基数大≈22万）</td><td>品类鼻祖，Steam 2013年网页老游移植</td></tr>
+<tr><td><span class="rank r2">2</span></td><td><b>Shelldiver 龟龟潜海记</b></td><td class="num">51.3万</td><td class="num">$160万</td><td class="num">99%</td><td><span class="tag t-hot">41.4% ≈ 21万国区玩家</span></td><td>独立增量品类黑马，国区占比全场最高</td></tr>
+<tr><td><span class="rank r3">3</span></td><td><b>Outhold 坚守阵地</b></td><td class="num">23.0万</td><td class="num">$110万</td><td class="num">86%</td><td>未进前3（欧美为主）</td><td>系数法曾低估3倍，塔防增量长尾强</td></tr>
+<tr><td><span class="rank">4</span></td><td><b>Keep on Mining! - Worlds 持续挖掘世界</b></td><td class="num">17.0万</td><td class="num">$87万</td><td class="num">80%</td><td>未进前3</td><td>前作《Keep on Mining!》另售40.4万份</td></tr>
+<tr><td><span class="rank">5</span></td><td><b>Astro Prospector 咖啡星矿工</b></td><td class="num">16.6万</td><td class="num">$66万</td><td class="num">91%</td><td><span class="tag t-warm">15.4%</span></td><td>官方已做手机版，TapTap 预约中</td></tr>
+<tr><td><span class="rank">6</span></td><td><b>Fishing Inc 钓鱼公司</b></td><td class="num">16.4万</td><td class="num">—</td><td class="num">91%</td><td>未进前3</td><td>SteamDB owners 16.1~16.4万</td></tr>
+<tr><td><span class="rank">7</span></td><td><b>Chef Knight 厨师骑士</b></td><td class="num">12.1万</td><td class="num">$60万</td><td class="num">95%</td><td>未进前3（欧美为主）</td><td><span class="up">7天仍卖8900份，处于上升期</span></td></tr>
+<tr><td><span class="rank">8</span></td><td><b>Forage Wizard 点击炼金术</b></td><td class="num">11.8万</td><td class="num">$64万</td><td class="num">87%</td><td>未进前3</td><td>销量回落（7天仅518份）</td></tr>
+<tr><td><span class="rank">9</span></td><td><b>Trainatic 爆裂列车</b></td><td class="num">9.5万</td><td class="num">$44万</td><td class="num">90%</td><td>未进前3</td><td>题材窄，热度低</td></tr>
+<tr><td><span class="rank">10</span></td><td><b>Rock Bottom 一挖到底</b></td><td class="num">8.4万</td><td class="num">$55万</td><td class="num">94%</td><td>未进前3</td><td><span class="down">系数法曾高估，实际垫底</span></td></tr>
+</table>
+<p class="note"><b>数据来源：</b>Gamalytic 免费版（2026-10-21）＋ SteamDB Owner Estimations。SteamDB 三家交叉值：Cookie Clicker 2.82~3.47M、Fishing Inc 160.9~164.2K。<br>
+<b>关键修正：</b>第三方数据与系数法排名差异显著——Outhold 从第8升到第3（实际23万）、Rock Bottom 从第6跌到第10（实际8.4万），说明塔防/射击类增量游戏的「评测率」明显低于挖矿/点击类，系数法会系统性失真。</p>
+</div>
+
+<h2>二、短视频与移动端热度</h2>
+<div class="card">
+<h3>2.1 B站最高播放排名（可精确抓取）</h3>
+<table>
+<tr><th>排名</th><th>游戏</th><th class="num">B站最高播放</th><th>最高播放视频 / UP主</th></tr>
+<tr><td><span class="rank r1">1</span></td><td><b>Chef Knight 厨师骑士</b></td><td class="num">650,444</td><td>《地牢厨神！我在地下城卖面赚到100万》· 艾瑞克Game</td></tr>
+<tr><td><span class="rank r2">2</span></td><td><b>Cookie Clicker</b></td><td class="num">507,227</td><td>《肝了100小时！全球首个白金奖杯》· ql玩AI</td></tr>
+<tr><td><span class="rank r3">3</span></td><td><b>Shelldiver 龟龟潜海记</b></td><td class="num">181,891</td><td>《上架4天！1300+评价！99%好评…》· 折笔日记</td></tr>
+<tr><td><span class="rank">4</span></td><td>Astro Prospector 咖啡星矿工</td><td class="num">59,898</td><td>《你跟我说这是"休闲游戏"？》· 独立游戏蜥蜴君</td></tr>
+<tr><td><span class="rank">5</span></td><td>Keep on Mining! 持续挖掘世界</td><td class="num">44,374</td><td>《全新超爽挖矿增量游戏！》· 龙眼皮Lyd</td></tr>
+<tr><td><span class="rank">6</span></td><td>Forage Wizard 点击炼金术</td><td class="num">37,443</td><td>《想离开？那就成为炼金术师！》· 鸽MAOZi</td></tr>
+<tr><td><span class="rank">7</span></td><td>Outhold 坚守阵地</td><td class="num">17,118</td><td>《把"增量养成"做到极致？塔防神作》· 爱游戏的小悠然</td></tr>
+<tr><td><span class="rank">8</span></td><td>Rock Bottom 一挖到底</td><td class="num">9,473</td><td>《深入地底挖矿熔炼…》· 鸽MAOZi</td></tr>
+<tr><td><span class="rank">9</span></td><td>Fishing Inc 钓鱼公司</td><td class="num">8,801</td><td>《点击放置增量类钓鱼游戏》· 主机游戏速报</td></tr>
+<tr><td><span class="rank">10</span></td><td>Trainatic 爆裂列车</td><td class="num">1,272</td><td>《【Trainatic】建造火车射击前进》· 黎明之光</td></tr>
+</table>
+
+<h3>2.2 抖音 / 视频号：精确播放量受限，改用「移动端移植进度」作代理</h3>
+<div class="hl-blue">
+抖音单条视频播放量受登录墙限制，无法通过公开接口批量抓取（第三方如蝉妈妈/飞瓜需付费）。本报告改用三个<b>更硬的信号</b>判断移动端热度：
+</div>
+<table>
+<tr><th>游戏</th><th>移动端现状</th><th>判断</th></tr>
+<tr><td><b>Shelldiver 龟龟潜海记</b></td><td>已出安卓版（2026-07，应用商店 4644 好评 / TapTap 104 评价），233乐园等有解说视频</td><td><span class="tag t-hot">官方已在做移动版，验证了手游化方向</span></td></tr>
+<tr><td><b>Astro Prospector 咖啡星矿工</b></td><td>官方明确"决定做手机版"，TapTap/好游快爆/4399 预约中（快爆 9.7 分）</td><td><span class="tag t-warm">移动版蓄势中，官方主动手游化</span></td></tr>
+<tr><td><b>Chef Knight 厨师骑士</b></td><td>尚无移动版；Steam 国区占比偏低，但 B站播放 65万（全场最高）</td><td><span class="tag t-cool">"看得多、买得少"——恰是免费+广告模式的机会</span></td></tr>
+<tr><td>其余7款</td><td>未见移动端动作，主要停留在 Steam</td><td>国内移动端声量有限</td></tr>
+</table>
+<p class="note"><b>核心洞察：</b>厨师骑士呈现「B站内容热度第一 + Steam 国区付费占比低」的反差——国内玩家爱看、想玩，但不愿为买断制付费。这恰好是微信小程序「免费玩 + 广告变现」模式的切入点。</p>
+</div>
+
+<h2>三、微信小程序竞品格局</h2>
+<div class="card">
+<p style="font-size:13px;color:var(--muted);margin-bottom:10px">数据来源：微信小游戏畅销榜 Top100（2026-08~09 多期）＋ GameLook 月度盘点。</p>
+<h3>3.1 休闲经营赛道现状（关键结论：已红海，但结构有缝隙）</h3>
+<ul style="font-size:14px;padding-left:20px;line-height:2">
+<li><b>休闲模拟经营 7 月全面爆发</b>：Top10 中休闲占 6 席，模拟经营类入榜达 13 款，为当前最热品类。</li>
+<li><b>美食经营已有多名头部</b>：《浪漫餐厅》（第5，餐厅改造经营）、《肥鹅美食街》（20~31名）、《梦幻消除战》（经营茶楼）、《向往的生活》《小镇派对》《去有梦的小岛》。</li>
+<li><b>用户对标产品归属</b>：《肥鹅美食街》《肥鹅健身房》《咸鱼之王》同属疯狂游戏，四款同时入榜——「萌宠 IP + 经营/放置」路径已被市场反复验证。</li>
+<li><b>当前趋势是「二合（合成消除）」</b>：Sensor Tower 数据，2026 上半年合成品类全球收入破 10 亿美元、同比+70%；《肥鹅美食街》本质是「二合 + 美食经营」，曾登顶 iOS 免费榜、冲进抖音小游戏榜 TOP10。</li>
+<li><b>缝隙机会</b>：纯「挖矿/钓鱼放置」在小程序头部相对空白（《道友来挖宝》是修仙挖宝、非纯挖矿；纯钓鱼放置未见头部），「地牢战斗 + 烹饪」的混搭玩法目前无直接对标。</li>
+</ul>
+
+<h3>3.2 对「厨师骑士类」立项的启示</h3>
+<table>
+<tr><th>维度</th><th>判断</th></tr>
+<tr><td>正面</td><td>美食经营大盘已验证（肥鹅系列、浪漫餐厅），「骑士下地牢收食材→烹饪→摆摊」能同时吃「战斗爽感 + 经营养成」两拨用户，且「地牢+美食」组合当前无直接竞品</td></tr>
+<tr><td>风险</td><td>纯「美食经营」已卷（浪漫餐厅、肥鹅美食街占位），若只做餐厅模拟会正面撞车；需用「地牢战斗」做差异化壁垒</td></tr>
+<tr><td>建议方向</td><td>用「二合（合成）」包装烹饪环节，或强化「下地牢打怪掉食材」的战斗反馈——这是《浪漫餐厅》《肥鹅》都没有的差异化钩子</td></tr>
+</table>
+</div>
+
+<h2>四、更新后的推荐指数（综合三项补充）</h2>
+<div class="card">
+<table>
+<tr><th>推荐</th><th>游戏</th><th>核心依据</th><th class="num">推荐指数</th></tr>
+<tr><td><span class="rank r1">1</span></td><td><b>Shelldiver 龟龟潜海记</b></td><td>销量51万+国区41.4%+好评99%+已出手游，三最全拿</td><td class="num"><b>9.5</b><div class="bar"><i style="width:95%"></i></div></td></tr>
+<tr><td><span class="rank r2">2</span></td><td><b>Chef Knight 厨师骑士</b></td><td>B站热度第一+美食经营大盘验证+「地牢+美食」差异化</td><td class="num"><b>8.8</b><div class="bar"><i style="width:88%"></i></div></td></tr>
+<tr><td><span class="rank r3">3</span></td><td><b>Astro Prospector 咖啡星矿工</b></td><td>国区15.4%+官方已手游化，弹幕需简化</td><td class="num"><b>8.3</b><div class="bar"><i style="width:83%"></i></div></td></tr>
+<tr><td><span class="rank">4</span></td><td><b>Keep on Mining! 持续挖掘世界</b></td><td>系列40万份验证挖矿循环，但 Worlds 好评率仅80%</td><td class="num"><b>8.0</b><div class="bar"><i style="width:80%"></i></div></td></tr>
+<tr><td><span class="rank">5</span></td><td><b>Fishing Inc 钓鱼公司</b></td><td>销量16万不低，钓鱼品类小程序相对空白</td><td class="num"><b>7.4</b><div class="bar"><i style="width:74%"></i></div></td></tr>
+<tr><td><span class="rank">6</span></td><td><b>Rock Bottom 一挖到底</b></td><td>实际销量垫底(8.4万)，但挖矿循环简单可快速验证</td><td class="num"><b>6.8</b><div class="bar"><i style="width:68%"></i></div></td></tr>
+<tr><td><span class="rank">7</span></td><td><b>Forage Wizard 点击炼金术</b></td><td>销量回落、题材偏冷</td><td class="num"><b>6.5</b><div class="bar"><i style="width:65%"></i></div></td></tr>
+<tr><td><span class="rank">8</span></td><td><b>Outhold 坚守阵地</b></td><td>销量意外高(23万)但好评率86%偏低、策略偏重</td><td class="num"><b>6.2</b><div class="bar"><i style="width:62%"></i></div></td></tr>
+<tr><td><span class="rank">9</span></td><td><b>Cookie Clicker 饼干计数器</b></td><td>机制过朴素+IP合规风险，仅作数值参考</td><td class="num"><b>5.5</b><div class="bar"><i style="width:55%"></i></div></td></tr>
+<tr><td><span class="rank">10</span></td><td><b>Trainatic 爆裂列车</b></td><td>全维度垫底</td><td class="num"><b>4.0</b><div class="bar"><i style="width:40%"></i></div></td></tr>
+</table>
+</div>
+
+<h2>五、核心结论（v2 增量更新）</h2>
+<div class="kpi">
+<div class="c"><b>商业验证最强</b><br>Shelldiver：销量 51万、国区占 41.4%、好评 99%，且官方已出手游——中国移动端市场的接受度已被实打实验证</div>
+<div class="c"><b>内容热度最高</b><br>Chef Knight B站 65万播放，但 Steam 国区付费低——「看多想玩但不愿买断」，正是免费+广告模式的理想切入</div>
+<div class="c"><b>竞品最危险</b><br>纯「美食经营」已红海（浪漫餐厅、肥鹅系列），必须用「地牢战斗」或「二合」做差异化，不能只做餐厅模拟</div>
+<div class="c"><b>数据最大修正</b><br>Outhold 实际销量 23万（原估算 3 倍），Rock Bottom 实际垫底——系数法对塔防/射击类会系统性失真</div>
+</div>
+<div class="card">
+<p><b>给立项的最终建议：</b>首选 <b>「萌宠放置收集」（对标 Shelldiver）</b>，次选 <b>「地牢战斗 + 烹饪经营」（对标 Chef Knight，需加差异化钩子）</b>。两者都应：①保留「几分钟一个正反馈循环」的节奏；②加入离线收益、转生继承、广告加速三大标配；③美术走「萌系卡通风」降低制作成本并契合微信受众。</p>
+</div>
+
+<footer>数据截至 2026-10-21。精确销量来源 Gamalytic（免费版）+ SteamDB Owner Estimations（两家交叉）；B站数据来自 bilibili 搜索 API；微信小游戏榜单来自微信小游戏畅销榜 Top100（2026-08~09）与 GameLook 月度盘点；抖音单条播放量因登录墙无法抓取，改用「移动端移植进度 + TapTap/应用商店数据 + Steam 国区占比」作代理指标。</footer>
+</div>
+</body>
+</html>
